@@ -1,7 +1,7 @@
 SRCS = $(wildcard *.ts)
 JS = $(SRCS:%.ts=%.js)
 
-.PHONY all build clean
+.PHONY: all build clean
 
 all: build
 
