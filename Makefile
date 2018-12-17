@@ -11,7 +11,7 @@ all: build
 build: $(JS)
 
 %.js: %.ts $(DEFINES)
-	tsc $<
-
+	tsc $^
+	
 clean:
 	rm -rf *.js

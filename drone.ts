@@ -12,7 +12,7 @@ class Drone {
 		this.frame.addChild(BABYLON.MeshBuilder.CreateTorus(name + ".frame.guard.FL", {
 			"diameter": 5,
 			"thickness": 2
-		}, scene)).position = new BABYLON.Vector3(-1, , -1);
+		}, scene)).position = new BABYLON.Vector3(-1, 0, -1);
 
 		this.frame.addChild(BABYLON.MeshBuilder.CreateTorus(name + ".frame.guard.FR", {
 			"diameter": 5,
