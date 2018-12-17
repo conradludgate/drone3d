@@ -32,3 +32,5 @@ class Drone {
 		this.frame.position = pos;
 	}
 }
+
+export { Drone };

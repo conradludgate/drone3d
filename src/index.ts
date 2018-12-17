@@ -1,6 +1,6 @@
 ///<reference path="babylon.d.ts" />
-/// <reference path="drone.ts" />
 
+import { Drone } from "./drone";
 
 class Game {
 	private _canvas: HTMLCanvasElement;
@@ -42,7 +42,7 @@ class Game {
 		// let ground = BABYLON.MeshBuilder.CreateGround('ground', 
 		// 	{width: 6, height: 6, subdivisions: 2}, this._scene);
 
-		new Drone("drone", BABYLON.Vector3(0, 1, 0), this._scene)
+		new Drone("drone", new BABYLON.Vector3(0, 1, 0), this._scene)
 	}
 
 	doRender() : void {
